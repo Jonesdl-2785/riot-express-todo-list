@@ -18,7 +18,7 @@ function cloneRepo() {
 	console.log("Cloning repo...");
 	// delete old copy of repo. Then, clone a fresh copy of repo from GitHub
 	cmd.get(
-		'rm -rf riot-express-todo-list && git clone https://github.com/sahat/riot-express-todo-list.git',
+		'rm -rf riot-express-todo-list && git clone https://github.com/Jonesdl-2785/riot-express-todo-list.git',
 		function(err, data, stderr){
 			console.log("cloneRepo callback\n\t err: " + err + "\n\t data: " + data + "\n\t stderr: " + stderr);
 			if(err == null){
@@ -76,7 +76,7 @@ function sshConnect() {
 
 	ssh.connect({
 		// TODO: ADD YOUR IP ADDRESS BELOW (e.g. '12.34.5.67')
-		host: '18.222.2.127',
+		host: '52.15.234.1',
 		username: 'ubuntu',
 		privateKey: 'ts-key.pem'
 	})
